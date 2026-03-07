@@ -1,5 +1,7 @@
 # batch-auth-quota
 
+[![CI](https://github.com/920293630/batch-auth-quota/actions/workflows/ci.yml/badge.svg)](https://github.com/920293630/batch-auth-quota/actions/workflows/ci.yml)
+
 `batch-auth-quota` 是一个独立的终端脚本工具，专门用于批量检查认证文件额度，开箱即可单独运行。
 
 ---
