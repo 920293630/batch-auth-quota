@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile script
+        run: python3 -m py_compile batch_auth_quota.py
+
+      - name: Check CLI version
+        run: python3 batch_auth_quota.py --version
+
+      - name: Check CLI help
+        run: python3 batch_auth_quota.py -h

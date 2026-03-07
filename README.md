@@ -109,6 +109,18 @@ CLI 参数 > 环境变量 > config.json > 内置默认值
 
 ---
 
+## 持续集成
+
+仓库已内置最小 GitHub Actions 校验流程：`.github/workflows/ci.yml`
+
+每次推送到 `main` 或提交 Pull Request 到 `main` 时，会自动执行：
+
+- `python3 -m py_compile batch_auth_quota.py`
+- `python3 batch_auth_quota.py --version`
+- `python3 batch_auth_quota.py -h`
+
+---
+
 ## 文档说明
 
 - `README.md`：项目概览与快速开始
