@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "batch-auth-quota"
+dynamic = ["version"]
+description = "Standalone batch auth quota checker for CLI Proxy API auth files"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "chengwd" }]
+keywords = ["quota", "auth", "cli-proxy-api", "batch-check"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+]
+
+[project.scripts]
+batch-auth-quota = "batch_auth_quota:main"
+
+[tool.setuptools]
+py-modules = ["batch_auth_quota"]
+
+[tool.setuptools.dynamic]
+version = { attr = "batch_auth_quota.__version__" }

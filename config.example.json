@@ -1,0 +1,19 @@
+{
+  "auth_dir": "~/.cli-proxy-api",
+  "api_base": "http://127.0.0.1:8317",
+  "concurrency": 8,
+  "auth_type": "",
+  "timeout": 25.0,
+  "use_auth_index": false,
+  "prompt_concurrency": true,
+  "prompt_management_key": true,
+  "preflight_check": true,
+  "retry_count": 2,
+  "retry_backoff_base": 0.6,
+  "show_run_summary": true,
+  "isolation_dir": "~/.cli-proxy-api/.quota_isolated",
+  "prompt_isolate_exhausted": true,
+  "check_isolated_on_start": true,
+  "prompt_restore_recovered": true,
+  "restore_threshold_bucket": "danger"
+}
