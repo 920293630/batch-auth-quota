@@ -13,3 +13,5 @@
 - 新增 `CONTRIBUTING.md` 与 `SECURITY.md`，补齐公开仓库协作与安全说明
 - 新增 `.github/CODEOWNERS`，明确核心脚本与文档默认维护者
 - 新增 `SUPPORT.md`，补充问题分流与使用支持说明
+- 新增 `.editorconfig`，统一 Python、Markdown、YAML、JSON 的基础格式约定
+- README 新增脱敏示例输出，帮助快速理解统计结果与输出结构
