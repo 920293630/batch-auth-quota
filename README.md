@@ -199,7 +199,5 @@ CLI 参数 > 环境变量 > config.json > 内置默认值
 - 版本文件：`VERSION`
 - 变更记录：`CHANGELOG.md`
 - 发布清单：`RELEASE.md`
-- 设计文档：`docs/plans/2026-03-06-repo-skeleton-design.md`
-- 实施计划：`docs/plans/2026-03-06-repo-skeleton-implementation.md`
 
 `LICENSE` 已采用 `MIT License`，允许商用、修改、分发与再授权，但需保留许可证声明。

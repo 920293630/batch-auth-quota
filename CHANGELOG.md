@@ -15,3 +15,4 @@
 - 新增 `SUPPORT.md`，补充问题分流与使用支持说明
 - 新增 `.editorconfig`，统一 Python、Markdown、YAML、JSON 的基础格式约定
 - README 新增脱敏示例输出，帮助快速理解统计结果与输出结构
+- 清理建仓阶段过程文档 `docs/plans/*`，保留面向使用与协作的公开文档
