@@ -1,0 +1,13 @@
+# Default owner
+* @920293630
+
+# Core script
+/batch_auth_quota.py @920293630
+
+# Docs and templates
+/docs/ @920293630
+/.github/ @920293630
+/README.md @920293630
+/USAGE.md @920293630
+/CONTRIBUTING.md @920293630
+/SECURITY.md @920293630

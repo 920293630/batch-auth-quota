@@ -135,10 +135,20 @@ CLI 参数 > 环境变量 > config.json > 内置默认值
 
 ---
 
+## 安全与贡献
+
+- 贡献前请阅读 `CONTRIBUTING.md`
+- 涉及敏感信息与漏洞反馈请阅读 `SECURITY.md`
+
+---
+
 ## 文档说明
 
 - `README.md`：项目概览与快速开始
 - `USAGE.md`：完整使用手册
+- `CONTRIBUTING.md`：贡献指南
+- `SECURITY.md`：安全说明
+- `SUPPORT.md`：问题分流与支持说明
 - `config.example.json`：配置模板
 - `.env.example`：环境变量模板
 - `run.sh`：轻量启动包装脚本
