@@ -9,3 +9,4 @@
 - 新增独立仓库元数据、版本文件、发布说明与 git 骨架
 - 新增 `MIT License`，允许宽松开源使用与商用分发
 - 新增最小 GitHub Actions CI，自动校验脚本可编译与 CLI 帮助输出
+- 新增 GitHub Issue / PR 模板，方便公开仓库协作与问题收集

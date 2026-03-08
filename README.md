@@ -111,6 +111,18 @@ CLI 参数 > 环境变量 > config.json > 内置默认值
 
 ---
 
+## 协作模板
+
+仓库已补充 GitHub 协作模板：
+
+- `Bug Report`
+- `Feature Request`
+- `Pull Request Template`
+
+适合公开仓库协作、问题反馈与变更审阅。
+
+---
+
 ## 持续集成
 
 仓库已内置最小 GitHub Actions 校验流程：`.github/workflows/ci.yml`

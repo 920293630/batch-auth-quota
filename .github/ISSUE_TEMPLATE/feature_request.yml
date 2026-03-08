@@ -1,0 +1,60 @@
+name: Feature Request
+description: 提出新能力、体验优化或统计增强建议
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提出改进建议。请尽量说明场景、收益和期望行为。
+  - type: input
+    id: summary
+    attributes:
+      label: 需求概述
+      description: 用一句话概括你的建议
+      placeholder: 例如：支持把统计结果导出为 CSV
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 功能分类
+      options:
+        - 统计展示
+        - 隔离/恢复
+        - 配置中心
+        - CLI 交互
+        - 输出格式
+        - 自动化/集成
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: pain
+    attributes:
+      label: 当前痛点
+      description: 现在遇到了什么问题，为什么现有能力不够用
+      placeholder: 当前流程中的具体问题
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+      description: 你希望新增或调整什么行为
+      placeholder: 希望增加的参数、交互或输出形式
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: 预期收益
+      description: 这项改动会带来什么价值
+      placeholder: 节省时间、提高可视化、减少误操作等
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: 补充信息
+      description: 可选，补充示例、截图、参考链接

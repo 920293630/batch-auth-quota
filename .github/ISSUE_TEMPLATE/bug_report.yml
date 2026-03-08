@@ -1,0 +1,75 @@
+name: Bug Report
+description: 报告脚本缺陷、统计异常或运行错误
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈问题。请尽量补充完整信息，方便快速定位。
+  - type: input
+    id: summary
+    attributes:
+      label: 问题概述
+      description: 用一句话描述问题
+      placeholder: 例如：批量检查时部分低额度账号没有进入正确档位
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 影响范围
+      options:
+        - 额度统计
+        - 隔离/恢复
+        - 配置读取
+        - CLI 交互
+        - 输出文件
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境
+      description: 请填写系统、Python 版本、CLI Proxy API 地址等
+      placeholder: |
+        OS:
+        Python:
+        API Base:
+        Auth Type:
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 请按顺序描述复现过程
+      placeholder: |
+        1. 执行命令 ...
+        2. 输入参数 ...
+        3. 观察到 ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+      placeholder: 应该如何表现
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      description: 可粘贴关键输出、错误信息或截图说明
+      placeholder: 实际输出 / 异常信息
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 相关日志或命令
+      render: shell
+      placeholder: |
+        python3 batch_auth_quota.py --type codex

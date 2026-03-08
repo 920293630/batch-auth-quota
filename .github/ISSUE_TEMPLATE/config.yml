@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Release Notes
+    url: https://github.com/920293630/batch-auth-quota/tree/main/docs/releases
+    about: 查看版本发布说明与变更记录
